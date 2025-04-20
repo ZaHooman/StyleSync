@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StyleSync</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/StyleSyncIcon.png" type="image/png">
+</head>
+<body>
+
+    <div class="main-content">
+    <h1>Hey! What's your learning style? Let's take a short quiz to find out!</h1>
+
+    <form id="quiz">
+        <p>1. You’re trying to pay attention to your math teacher, and she starts ranting about derivatives. She suddenly announces that there will be a quiz on derivatives tomorrow. What do you do to study? </p>
+        <label><input type = "radio" name="q1" value="visual"> Watch a YouTube tutorial that goes over examples and how to do them?</label><br>
+        <label><input type = "radio" name="q1" value="auditory"> Have a friend explain it to you out loud?</label><br>
+        <label><input type = "radio" name="q1" value="kinesthetic"> Use blocks and objects to model different situations.</label><br>
+
+        <p>2. You need to memorize a list of vocabulary words for a quiz. What’s your strategy? </p>
+        <label><input type = "radio" name="q2" value="visual"> Write them out using different colored pens?</label><br>
+        <label><input type = "radio" name="q2" value="auditory"> Record yourself saying the words and definitions?</label><br>
+        <label><input type = "radio" name="q2" value="kinesthetic"> Act out each word with gestures?</label><br>
+
+        <p>3. You’re prepping for a history test. What study method do you choose? </p>
+        <label><input type = "radio" name="q3" value="visual"> Make a flowchart or draw a timeline?</label><br>
+        <label><input type = "radio" name="q3" value="auditory"> Listen to a history podcast?</label><br>
+        <label><input type = "radio" name="q3" value="kinesthetic"> Rearrange flashcards?</label><br>
+
+        <p>4. You’re given instructions on how to build a model for a science project. What do you do first?
+        </p>
+        <label><input type = "radio" name="q4" value="visual"> Look at the diagrams or pictures included with the instructions.</label><br>
+        <label><input type = "radio" name="q4" value="auditory"> Have someone read the instructions to you, or read them out loud to yourself?</label><br>
+        <label><input type = "radio" name="q4" value="kinesthetic"> Start building immediately, learning through trial and error?</label><br>
+
+        <p>5. You’re learning a new language. How do you prefer to practice? </p>
+        <label><input type = "radio" name="q5" value="visual"> Use flashcards with images and color-coded notes to connect meanings visually?</label><br>
+        <label><input type = "radio" name="q5" value="auditory"> Listen to conversations, songs, or repeat words aloud with a person who is fluent?</label><br>
+        <label><input type = "radio" name="q5" value="kinesthetic"> Simulate a conversation, act out verbs, or use physical cues to remember words?</label><br>
+
+        <button type = "submit">Submit Responses!</button>
+    </form>
+
+    <div id="result"></div>
+
+</div>
+
+    <div class="settings">
+        <h2>Acessibility Settings</h2>
+
+        <hr>
+
+        <h3>Select Font:</h3>
+        <button id="ArialButton">Arial</button>
+        <button id="VerdanaButton">Verdana</button>
+        <button id="OpenDyslexiaButton">OpenDyslexia</button>
+        <button id="TimesNewRomanButton">TimesNewRoman</button>
+
+        <hr>
+
+        <h3>Select Color Mode:</h3>
+        <input type="radio" name="color" id="colorLight" value="light">
+        <label for="colorLight">Light</label>
+        <input type="radio" name="color" id="colorDark" value="dark">
+        <label for="colorDark">Dark</label>
+
+
+        <hr>
+
+        <h3>Select Text Size:</h3>
+        <input type="range" id="TextSizeSlider" min="10" max="30" value="20">
+        
+        <hr>
+        
+        <button id="resetButton">Reset to Default</button>
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

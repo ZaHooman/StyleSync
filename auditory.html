@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat and Image Generator with Text-to-Speech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/StyleSyncIcon.png" type="image/png">
+</head>
+<body>
+
+<div class="main-content">
+    <h1>Welcome to the AI Chat with Text-to-Speech!</h1>
+
+    <div class="chat-container">
+        <div id="chatDisplay"></div>
+        <input type="text" id="userInput" placeholder="Type your message..." />
+        <button id="sendBtn">Send</button>
+    </div>
+
+</div>
+
+<div class="settings">
+    <h2>Accessibility Settings</h2>
+
+    <hr>
+
+    <h3>Select Font:</h3>
+    <button id="ArialButton">Arial</button>
+    <button id="VerdanaButton">Verdana</button>
+    <button id="OpenDyslexiaButton">OpenDyslexia</button>
+    <button id="TimesNewRomanButton">Times New Roman</button>
+
+    <hr>
+
+    <h3>Select Color Mode:</h3>
+    <input type="radio" name="color" id="colorLight" value="light">
+    <label for="colorLight">Light</label>
+    <input type="radio" name="color" id="colorDark" value="dark">
+    <label for="colorDark">Dark</label>
+
+    <hr>
+
+    <h3>Select Text Size:</h3>
+    <input type="range" id="TextSizeSlider" min="10" max="30" value="20">
+    
+    <!--<h3>Select Voice:</h3>
+    <select id="voiceSelect"></select>-->
+
+    <h3>Select Speech Speed:</h3>
+    <input type="range" id="speechSpeed" min="0.5" max="2" step="0.1" value="1">
+
+    <hr>
+    
+    <button id="resetButton">Reset to Default</button>
+</div>
+
+<script src="auditory.js"></script>
+
+</body>
+</html>

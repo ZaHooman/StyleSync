@@ -1,0 +1,191 @@
+body {
+    font-family: "Comic Sans MS", sans-serif;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #292831;
+}
+
+body.light-mode {
+    background-color: #ee8695;
+}
+
+body.dark-mode {
+    background-color: #292831;
+    color: #f7f7ff;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 15px;
+    color: inherit;
+}
+
+form {
+    background-color: #fbbbad;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: #292831;
+    max-width: 600px;
+    text-align: left; 
+}
+
+.settings, .chat-container {
+    background-color: #fbbbad;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: #292831;
+    max-width: 600px;
+}
+
+body.dark-mode form,
+body.dark-mode .settings,
+body.dark-mode .chat-container {
+    background-color: #333f58;
+    color: #f1f1f1;
+    border: 1px solid #444;
+}
+
+.settings {
+    position: sticky;
+    top: 30px;
+    max-width: 260px;
+    max-height: 2000px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2, h3 {
+    margin-bottom: 10px;
+    color: inherit;
+}
+
+button, input[type="radio"], input[type="range"] {
+    margin: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode button {
+    background-color: #4a7a96;
+    color: white;
+}
+
+body.light-mode button:hover {
+    background-color: #333f58;
+}
+
+body.dark-mode button {
+    background-color: #ee8695;
+    color: #eee;
+}
+
+body.dark-mode button:hover {
+    background-color: #ee8695;
+}
+
+input[type="radio"], input[type="range"] {
+    accent-color: currentColor;
+}
+
+body.dark-mode input[type="radio"], 
+body.dark-mode input[type="range"] {
+    background-color: #fbbbad;
+    border: 2px solid #fbbbad;
+    accent-color: #ee8695;
+}
+
+body.light-mode input[type="radio"], 
+body.light-mode input[type="range"] {
+    background-color: #4a7a96;
+    border: 2px solid #333f58;
+    accent-color: #333f58;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333f58;
+    background-color: #f0f0f0;
+}
+
+body.dark-mode #result {
+    background-color: #292831;
+    color: #fbbbad;
+}
+
+body.light-mode #result {
+    background-color: #ee8695;
+    color: #292831;
+}
+
+#kinestheticChat {
+    max-width: 600px;
+    width: 90%;
+}
+
+#chatDisplay {
+    background-color: inherit;
+    color: inherit;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 10px;
+    min-height: 150px;
+    max-height: 300px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin-right: 5px;
+    background-color: inherit;
+    color: inherit;
+}
+
+.typing {
+    border-right: 2px solid currentColor;
+    animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@font-face {
+    font-family: "OpenDyslexia";
+    src: url("fonts/OpenDyslexic-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+img {
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
