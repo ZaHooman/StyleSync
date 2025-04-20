@@ -1,6 +1,6 @@
 # 🎨 StyleSync
 
-**StyleSync** is a personalized learning assistant that adapts to your preferred learning style—visual, auditory, or kinesthetic. Built during a hackathon, it combines a quick onboarding quiz with AI-powered content delivery to enhance user engagement and learning efficiency.
+**StyleSync** is a personalized learning assistant that adapts to your preferred learning style—visual, auditory, or kinesthetic. It's premise is to combine a quick onboarding quiz with AI-powered content delivery to enhance user engagement and learning efficiency.
 
 ---
 
@@ -10,7 +10,7 @@
 - **Customized AI Interfaces** – Directs users to a tailored AI experience based on quiz results.
 - **OpenAI Integration** – Uses OpenAI's API to generate responses suited to each learning style.
 - **User Preferences** – Allows customization of font, theme (light/dark), and text size, with preferences saved locally.
-- **Error Handling** – Includes fallback messages to maintain user experience in case of API failures.
+- **Error Handling** – Includes general error messages to maintain user experience in case of failures (without wesbite breaking).
 
 ---
 
@@ -38,26 +38,26 @@
 
 ```
 StyleSync/
-├── assets/               # Images and design assets
-├── fonts/                # Custom fonts
+├── assets/               # Images and design assets (Logo)
+├── fonts/                # Custom fonts (OpenDyslexic)
 ├── auditory.html         # Auditory learning interface
 ├── auditory.js           # JS for auditory interface
-├── kinesthetic.html      # Kinesthetic learning interface
+├── kinesthetic.html      # Kinesthetic learning interface (under construction)
 ├── visual.html           # Visual learning interface
 ├── visual.js             # JS for visual interface
 ├── index.html            # Landing page with quiz
 ├── script.js             # Main JS script
 ├── style.css             # Main CSS file
 ├── fonts.scss            # SCSS for fonts
-├── server.js             # Node.js backend server
+├── server.js             # Node.js backend server (utilized for visual AI)
 ├── package-lock.json     # NPM lock file
 ├── README.md             # Project documentation
-└── StyleSync - Design Files.zip # Design assets
+└── StyleSync - Design Files.zip # Design files
 ```
 
 ---
 
-## 🧪 Getting Started
+## 🧪 How to Use It
 
 1. **Clone the repository**:
 
@@ -99,10 +99,3 @@ StyleSync/
 - **Privacy** – No personal data is collected or stored.
 - **Security** – API keys are kept private via environment variables.
 - **Accessibility** – The interface supports customizable fonts, sizes, and themes.
-
-This project is licensed under the MIT License.
-```
-
----
-
-Paste this into your `README.md` file, commit it, and you're good to go! Want me to generate a Figma-style “Design Section” or add badges (like MIT License or Built with Node.js)?
