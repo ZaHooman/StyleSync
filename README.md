@@ -6,32 +6,31 @@
 
 ## 🚀 Features
 
-- **Learning Style Quiz** Determines the user's preferred learning metho.
-- **Customized AI Interfaces** Directs users to a tailored AI experience based on their quiz result.
-- **OpenAI Integration** Utilizes OpenAI's API to generate responses suited to each learning styl.
-- **User Preferences** Allows customization of font, theme (light/dark), and text size, with preferences saved locall.
-- **Error Handling** Includes fallback messages to maintain user experience in case of API failure.
+- **Learning Style Quiz** – Determines the user's preferred learning method.
+- **Customized AI Interfaces** – Directs users to a tailored AI experience based on quiz results.
+- **OpenAI Integration** – Uses OpenAI's API to generate responses suited to each learning style.
+- **User Preferences** – Allows customization of font, theme (light/dark), and text size, with preferences saved locally.
+- **Error Handling** – Includes fallback messages to maintain user experience in case of API failures.
 
 ---
 
 ## 🧠 How It Works
 
-1. **Start*: Users begin with a short quiz to identify their learning stye.
-2. **Redirect*: Based on the result, users are directed to one of three HTML pags:
+1. **Start** – Users take a short quiz to identify their learning style.
+2. **Redirect** – Based on the result, users are directed to one of three HTML pages:
    - `visual.html`
    - `auditory.html`
    - `kinesthetic.html`
-3. **Interact*: Each page features an AI chatbot interface tailored to the specific learning stye.
-4. **Customize*: Users can adjust font, theme, and text size to their preferene.
+3. **Interact** – Each page features a chatbot tailored to the selected learning style.
+4. **Customize** – Users can adjust font, theme, and text size to suit their needs.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend*: HTML, CSS, JavaScipt
-- **Backend*: Nod.js
-- **AI Integration*: OpenAIAPI
-- **Design Assets*: Custom logo and basic design elemnts
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Node.js
+- **AI Integration**: OpenAI API
 
 ---
 
@@ -78,7 +77,7 @@ StyleSync/
    - Create a `.env` file in the root directory.
    - Add your OpenAI API key:
 
-     ```env
+     ```
      OPENAI_API_KEY=your-openai-api-key
      ```
 
@@ -88,15 +87,22 @@ StyleSync/
    node server.js
    ```
 
-5. **Access the application**:
+5. **Open the app**:
 
-   - Open `index.html` in your browser to start the quiz and experience StyleSync.
+   - Launch `index.html` in your browser to get started.
 
 ---
 
 ## 🔐 Ethical Considerations
 
-- **Transparecy**: Users are informed they are interacting with an AI ystem.
-- **Privcy**: No personal data is collected or tored.
-- **Securty**: API keys are managed securely using environment variables and are not exposed in the coebase.
-- **Accessibilty**: Users can customize font, theme, and text size to suit theirneeds.
+- **Transparency** – Users know they’re interacting with an AI system.
+- **Privacy** – No personal data is collected or stored.
+- **Security** – API keys are kept private via environment variables.
+- **Accessibility** – The interface supports customizable fonts, sizes, and themes.
+
+This project is licensed under the MIT License.
+```
+
+---
+
+Paste this into your `README.md` file, commit it, and you're good to go! Want me to generate a Figma-style “Design Section” or add badges (like MIT License or Built with Node.js)?
